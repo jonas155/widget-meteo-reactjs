@@ -4,7 +4,9 @@ import { useEffect, useState } from "react";
 const Weather = () => {
     const ville = 'Paris';
     //const codePostal = '75000';
-    const appId = '0f7feb36c20988ae2aad7047f75bf931';
+    const appId = process.env.REACT_APP_API_KEY;
+    console.log(process.env);
+    
     /*const [lon, setLon] = useState(null);
     const [lat, setLat] = useState(null);*/
     const [temp, setTemp] = useState(null);
